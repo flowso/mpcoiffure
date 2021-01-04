@@ -1,0 +1,50 @@
+// The window
+.modal-window {
+    position: fixed;
+    left: 50%;
+    top: calc(50vh - 10%);
+    width: $modal-width;
+    background: $modal-bg;
+    padding: $modal-padding;
+    border-radius: $modal-border-radius;
+    border: $modal-border;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    box-shadow: $modal-shadow;
+    z-index: 2;
+    section.header {
+        font-size: $modal-header-h1-font-size;
+        border-bottom: $modal-header-h1-border;
+    }
+    section.content {
+        font-size: $modal-contentsize;
+    }
+}
+// For markup modal
+.modal {
+	display: none;
+}
+
+// The class added to darken the page
+.modal-shade {
+    position: $shade-position;
+    height: $shade-height;
+    width: $shade-width;
+    background-color: $shade-background-color;
+    z-index: $shade-z-index;
+}
+
+// The close button
+.modal-close {
+    font-size: $modal-closesize;
+    font-weight: $modal-closeweight;
+    line-height: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity-20);
+    opacity: .2;
+}

@@ -1,0 +1,283 @@
+/*
+
+    GENERAL NOTES:
+        This section is essentially still a WIP. I decided to mixinify this
+        project to ease customization, though it takes a while to move
+        everything over by hand. Right now, there's a mix of camel case,
+        listed-as-the-css, and other just wrong variables. I'll be working to
+        make it so that vars are in the following format:
+        `$itemname-css: value;`. So, bare with the inconsistencies here as I
+        work out the kinks :)
+
+*/
+
+
+/*
+    Colors
+*/
+
+// Primary color pallete
+$primary-blue: #3786E1;
+$primary-green: #70AA6D;
+$primary-red: #AA3A32;
+$primary-lightblue: #4BD7E4;
+$primary-orange: #DB6127;
+
+// Normal colors
+$dark-blue: #2c52a8;
+$white: #fff;
+$black: #000;
+$lightBlack: #333; // AKA dark gray
+
+/*
+    Navigation
+    A ton more will be added later
+*/
+
+// Navigation
+$nav-height: 52px;
+$nav-lineHeight: 50px;
+$nav-brandingWeight: 400;
+$nav-brandingFontSize: 16px;
+$nav-brandingHeight: 50px;
+$nav-brandingLineHeight: 50px;
+$nav-brandingPadding: 0 15px;
+$nav-imgHeight: 32px;
+$nav-imgWidth: 32px;
+$nav-imgVAlign: middle;
+$nav-dropdown-padding: 8px 0;
+$nav-dropdown-margin: 2px 0 0;
+$nav-dropdown-fontSize: 16px;
+$nav-dropdown-borderRadius: 4px;
+$nav-branding-padding-y: 0px;
+$nav-branding-padding-x: 15px;
+$nav-padding-x: 16px;
+$nav-padding-y: 16px;
+$nav-lineHeight: 1.5;
+$nav-item-padding: 8px;
+$nav-font-size: 16px;
+
+// Navigation Variants
+$dark-nav: #323232;
+
+
+/*
+    Blocks
+*/
+
+// Masthead
+$mast-padding: 50px 30px;
+$mast-margin: 15px;
+$mast-BR: 5px;
+$mast-headerSize: 36px; // Changes the font-size for h1 tags inside of Masthead
+$mast-fillSize: calc(100vh - 52px); // Change the 52px if navbar height is custom
+$mast-h1Color: darken($white, 60%);
+$mast-h1Margin: .543em;
+$mast-pColor: darken($white, 60%);
+$mast-pSize: 24px;
+
+// Masthead Inverse
+$mastinv-h1Color: $white;
+$mastinv-pColor: $white;
+
+// Card
+$cardmargin: 15px 10px;
+$cardpadding: 10px;
+$cardborderradius: 5px;
+$cardborder: 1px solid darken($white, 10%);
+$cardh3: 2.5rem;
+$cardh4: 1.5rem;
+$cardborder-margin: 10px;
+$cardborder-border: 1px solid darken($white, 10%);
+$cardtext-lh: 1.2rem;
+$cardtext-margin: 10px;
+$cardlinks: 1.07rem;
+
+// Article
+$articlefont: Georgia, "Cambria", serif;
+$article-lh: 2rem;
+$article-fontsize: 18px;
+$article-h1: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// 404 Page
+$e404-display: block;
+$e404-padding: 50px 60px;
+$e404-h1-fontsize: 45px;
+$e404-p-fontsize: 30px;
+
+// Footer
+$footer-border-top: solid 1px #eee;
+$footer-border-bottom: solid 1px #eee;
+$footer-margin: 10px 0;
+$footer-display: block;
+$footer-padding: 20px;
+
+// Footer Dark
+$footerdark-background: $lightBlack;
+$footerdark-border-top: solid 1px #777;
+$footerdark-border-bottom: solid 1px #777;
+$footerdark-color: #fff;
+$footerdark-margin: 10px 0 0 0;
+$footerdark-link: #5fabd8;
+
+// Wells
+$well-background: darken($white, 5%);
+$well-padding: 10px;
+$well-width: 96%;
+$well-display: block;
+$well-border: 1px solid darken($white, 20%);
+
+// Notices
+$notice-display: block;
+$notice-padding: 10px;
+$notice-header-display: block;
+$notice-header-font: 1.7rem;
+$notice-header-border-bottom: solid darken(#e7e6e6, 20%) 1px;
+$notice-header-padding-bottom: 3px;
+$notice-p-margin-top: 5px;
+$notice-p-font: 1.25rem;
+
+// Notice Variants
+$notice-variant-header: #fff;
+$notice-primary-color: lighten(#333, 70%);
+$notice-primary-border: solid darken($primary-blue, 10%) 5px;
+$notice-variant-color: #fff;
+$notice-green-border: solid darken($primary-green, 10%) 5px;
+$notice-red-border: solid darken($primary-red, 10%) 5px;
+$notice-lightblue-border: solid darken($primary-lightblue, 20%) 5px;
+$notice-orange-border: solid darken($primary-orange, 10%) 5px;
+
+// Blockquotes
+$blockquote-border: solid rgb(181, 181, 181) 3px;
+
+/*
+    Modal
+*/
+
+// Modal Customization
+$modal-bg: #fff;
+$modal-width: 60%;
+$modal-padding: 30px;
+$modal-border-radius: 3px;
+$modal-border: #777 solid 1px;
+$modal-shadow: 3px 3px 5px rgba(0,0,0,.2);
+$modal-header-h1-font-size: 1.6rem;
+$modal-header-h1-border: #d3d3d3 solid 1px;
+$modal-contentsize: 1rem;
+$modal-closesize: 21px;
+$modal-closeweight: 600;
+
+// Modal Shade
+$shade-position: fixed;
+$shade-height: 100%;
+$shade-width: 100%;
+$shade-background-color: rgba(0,0,0,.7);
+$shade-z-index: 1;
+
+/*
+    Buttons
+*/
+
+// Main Button Class
+$button-display: inline-block;
+$button-padding: 6px 12px;
+$button-margin-bottom: 0px;
+$button-font-size: 14px;
+$button-font-weight: 400;
+$button-line-height: 1.42857143;
+$button-text-align: center;
+$button-white-space: nowrap;
+$button-vertical-align: middle;
+$button-touch-action: manipulation;
+$button-background-image: none;
+$button-border: 1px solid transparent;
+$button-border-image-source: initial;
+$button-border-image-slice: initial;
+$button-border-image-width: initial;
+$button-border-image-outset: initial;
+$button-border-image-repeat: initial;
+$button-border-radius: 4px;
+
+// Large Button
+$lgbutton-padding: 12px 24px;
+$lgbutton-font-size: 1.45rem;
+
+// Button Primary
+$btn-primary-background: $primary-blue;
+$btn-primary-color: #fff;
+$btn-primary-border: 1px solid $primary-blue;
+$btn-primary-hover-text-decoration: none;
+$btn-primary-hover-color: #fff;
+
+// Button Green
+$btn-green-background: $primary-green;
+$btn-green-color: #fff;
+$btn-green-border: 1px solid $primary-green;
+$btn-green-hover-text-decoration: none;
+$btn-green-hover-color: #fff;
+
+// Button Red
+$btn-red-background: $primary-red;
+$btn-red-color: #fff;
+$btn-red-border: 1px solid $primary-red;
+$btn-red-hover-text-decoration: none;
+$btn-red-hover-color: #fff;
+
+// Button Light Blue
+$btn-ltblue-background: $primary-lightblue;
+$btn-ltblue-color: #fff;
+$btn-ltblue-border: 1px solid $primary-lightblue;
+$btn-ltblue-hover-text-decoration: none;
+$btn-ltblue-hover-color: #fff;
+
+// Button Orange
+$btn-orange-background: $primary-orange;
+$btn-orange-color: #fff;
+$btn-orange-border: 1px solid $primary-orange;
+$btn-orange-hover-text-decoration: none;
+$btn-orange-hover-color: #fff;
+
+/*
+    Forms
+*/
+
+// Form
+$form-margin: 0;
+$form-padding: 0;
+$form-display: block;
+
+$form-box-sizing: border-box;
+$form-font-size: 14px;
+$form-line-height: 1.42857143;
+$form-background: #fff;
+$form-margin: 10px 0;
+
+// Outlined Form
+$formoutline-border: solid rgba(175, 175, 175, 0.76) 1px;
+$formoutline-border-radius: 5px;
+$formoutline-padding: 15px;
+
+// Label
+$flabel-display: block;
+$flabel-max-width: 100%;
+$flabel-margin-bottom: 2px;
+$flabel-margin-top: 5px;
+$flabel-font-weight: 400;
+$flabel-font-size: 16px;
+
+// Inputs
+    // Soon™
+
+// Submission
+$formsubmit-margin-top: 10px;
+
+// Checkboxes
+$fchk-display: block;
+$fchk-position: relative;
+$fchk-margin-top: 10px;
+$fchk-margin-bottom: 10px;
+$fchk-padding-left: 20px;
+$fchk-label-font-size: 1rem;
+$fchk-label-cursor: pointer;
+$fchk-type-checkbox-margin-left: -20px;
+$fchk-type-checkbox-position: absolute;

@@ -1,0 +1,172 @@
+// Buttons
+
+// Button Group
+.button-group {
+	display: block;
+	padding: 5px 0;
+}
+
+// Vertical Method
+.button-group.vertical {
+	.button {
+		display: block;
+		max-width: 200px;
+		margin: 0 auto;
+	}
+	.button+.button {
+		margin-top: 5px;
+	}
+}
+
+// Main buttom wrapper class
+.button {
+    display: $button-display;
+    padding: $button-padding;
+    margin-bottom: $button-margin-bottom;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    line-height: $button-line-height;
+    text-align: $button-text-align;
+    white-space: $button-white-space;
+    vertical-align: $button-vertical-align;
+    touch-action: $button-touch-action;
+    -webkit-user-select: none;
+    background-image: $button-background-image;
+    border: $button-border;
+    border-image-source: $button-border-image-source;
+    border-image-slice: $button-border-image-slice;
+    border-image-width: $button-border-image-width;
+    border-image-outset: $button-border-image-outset;
+    border-image-repeat: $button-border-image-repeat;
+    border-radius: $button-border-radius;
+}
+
+// Large button
+.button-large {
+	padding: $lgbutton-padding;
+	font-size: $lgbutton-font-size;
+}
+
+// Primary background & border
+.button-primary {
+    background: $btn-primary-background;
+    color: $btn-primary-color;
+    border: $btn-primary-border;
+}
+.button-primary:hover {
+	text-decoration: $btn-primary-hover-text-decoration;
+	color: $btn-primary-hover-color;
+}
+
+// Green background & border
+.button-green {
+	background: $btn-green-background;
+	color: $btn-green-color;
+	border: $btn-green-border;
+}
+.button-green:hover {
+	text-decoration: $btn-green-hover-text-decoration;
+	color: $btn-green-hover-color;
+}
+
+// Red background & border
+.button-red {
+	background: $btn-red-background;
+	color: $btn-red-color;
+	border: $btn-red-border;
+}
+.button-red:hover {
+	text-decoration: $btn-red-hover-text-decoration;
+	color: $btn-red-hover-color;
+}
+
+// Light blue background & border
+.button-lightBlue {
+	background: $btn-ltblue-background;
+	color: $btn-ltblue-color;
+	border: $btn-ltblue-border;
+}
+.button-lightBlue:hover {
+	text-decoration: $btn-ltblue-hover-text-decoration;
+	color: $btn-ltblue-hover-color;
+}
+
+// Orange background & border
+.button-orange {
+	background: $btn-orange-background;
+	color: $btn-orange-color;
+	border: $btn-orange-border;
+}
+.button-orange:hover {
+	text-decoration: $btn-orange-hover-text-decoration;
+	color: $btn-orange-hover-color;
+}
+
+// Ghost primary version (just outline)
+.button-ghost-primary {
+	background: transparent;
+	transition: color ease .25s, border-color ease .25s;
+    color: $primary-blue;
+    border: $btn-primary-border;
+}
+.button-ghost-primary:hover {
+	color: $primary-blue;
+	transition: color ease .25s, border-color ease .25s;
+	text-decoration: none;
+}
+
+// Ghost green version (just outline)
+.button-ghost-green {
+	background: transparent;
+	transition: color ease .25s, border-color ease .25s;
+	color: $primary-green;
+	border: $btn-green-border;
+}
+.button-ghost-green:hover {
+	color: $primary-green;
+	transition: color ease .25s, border-color ease .25s;
+	text-decoration: none;
+}
+
+// Ghost red version (just outline)
+.button-ghost-red {
+	background: transparent;
+	transition: color ease .25s, border-color ease .25s;
+	color: $primary-red;
+	border: $btn-red-border;
+	font-weight: 600;
+}
+.button-ghost-red:hover {
+	text-decoration: none;
+	transition: color ease .25s, border-color ease .25s;
+	color: lighten($primary-red, 15%);
+	border-color: lighten($primary-red, 15%);
+}
+
+// Ghost light blue version (just outline)
+.button-ghost-lightBlue {
+	background: transparent;
+	transition: color ease .25s, border-color ease .25s;
+	color: $primary-lightblue;
+	border: $btn-ltblue-border;
+}
+.button-ghost-lightBlue:hover {
+	text-decoration: none;
+	transition: color ease .25s, border-color ease .25s;
+	color: darken($primary-lightblue, 20%);
+	border-color: darken($primary-lightblue, 20%);
+}
+
+// Ghost orange version (just outline)
+.button-ghost-orange {
+	background: transparent;
+	transition: color ease .25s, border-color ease .25s;
+	color: lighten($primary-orange, 7%);
+	border: $btn-orange-border;
+}
+.button-ghost-orange:hover {
+	text-decoration: none;
+	transition: color ease .25s, border-color ease .25s;
+	color: $primary-orange;
+	border-color: $primary-orange;
+}

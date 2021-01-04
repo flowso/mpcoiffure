@@ -1,0 +1,84 @@
+// Overall form
+form {
+	margin: $form-margin;
+	padding: $form-padding;
+	display: $form-display;
+}
+.form {
+	display: $form-display;
+	box-sizing: $form-box-sizing;
+	font-size: $form-font-size;
+	line-height: $form-line-height;
+	background: $form-background;
+	margin: $form-margin;
+}
+.formOutline {
+	border: $formoutline-border;
+	border-radius: $formoutline-border-radius;
+	padding: $formoutline-padding;
+}
+
+// Labels
+.form label {
+	display: $flabel-display;
+	max-width: $flabel-max-width;
+	margin-bottom: $flabel-margin-bottom;
+	margin-top: $flabel-margin-top;
+	font-weight: $flabel-font-weight;
+	font-size: $flabel-font-size;
+}
+
+// Inputs
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"] {
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	background: #fff;
+	border: 1px solid lighten($black, 60%);
+	border-radius: 4px;
+	transition: border-color ease-in-out .15s;
+	outline: 0;
+}
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus {
+	border: 1px solid #3786E1;
+}
+.form input.success {
+	border: 1px solid $primary-green;
+}
+.form input.error {
+	border: 1px solid $primary-red;
+}
+.form input.warning {
+	border: 1px solid $primary-orange;
+}
+.form input::placeholder {
+	color: lighten(#333, 20%);
+}
+
+// Submission
+.form button[type="submit"] {
+	margin-top: $formsubmit-margin-top;
+}
+
+// Checkboxes
+.checkbox {
+	display: $fchk-display;
+	position: $fchk-position;
+	margin-top: $fchk-margin-top;
+	margin-bottom: $fchk-margin-bottom;
+	padding-left: $fchk-padding-left;
+	label {
+		font-size: $fchk-label-font-size;
+		cursor: $fchk-label-cursor;
+	}
+	input[type=checkbox] {
+		margin-left: $fchk-type-checkbox-margin-left;
+		position: $fchk-type-checkbox-position;
+	}
+}

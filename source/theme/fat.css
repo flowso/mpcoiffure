@@ -1,0 +1,48 @@
+/*
+Unminified. It's fat.
+*/
+
+#sections {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gridContainer {
+	margin: 80px 20px;
+	padding: 0;
+}
+
+.homeGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 30px;
+	margin-top: 1em;
+}
+#homeColumn h1 {
+	font-size: 2.8em;
+	font-weight: 400;
+}
+#homeColumn p {
+	font-size: 1.3em;
+}
+#homeHeader {
+	font-size: 3.9em;
+}
+.small-break {
+	margin: 30px auto 30px auto;
+}
+
+.fillPage {
+	height: 75vh;
+}
+
+@media (max-width: 740px) {
+	.homeGrid {
+		display: block;
+		grid-template-columns: 0;
+		grid-column-gap: 0;
+	}
+	.homeGrid > #homeColumn+#homeColumn {
+		margin-top: 15px;
+	}
+}

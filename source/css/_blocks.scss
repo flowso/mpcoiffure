@@ -1,0 +1,242 @@
+//Masthead
+.masthead {
+	display: block;
+	background: darken($white, 5%);
+	padding: $mast-padding;
+	margin: $mast-margin;
+	border-radius: $mast-BR;
+	h1 {
+		margin-bottom: $mast-h1Margin;
+		font-size: $mast-headerSize;
+		color: $mast-h1Color;
+		font-weight: 300;
+	}
+	p.text-large {
+		font-size: $mast-pSize;
+		color: $mast-pColor;
+		line-height: normal;
+	}
+}
+.masthead.inverse {
+	background: $lightBlack;
+	h1 {
+		color: $mastinv-h1Color;
+	}
+	p.text-large {
+		color: $mastinv-h1Color;
+	}
+}
+// Card blocks
+.card {
+	// Not recommended, would use Grid instead of this.
+	display: inline-block;
+	background: darken($white, 5%);
+	margin: $cardmargin;
+	padding: $cardpadding;
+	border-radius: $cardborderradius;
+	border: $cardborder;
+	h3 {
+		font-size: $cardh3;
+	}
+	h4 {
+		font-size: $cardh4;
+		font-weight: 400;
+	}
+	.border {
+		margin-bottom: $cardborder-margin;
+		border-bottom: $cardborder-border;
+	}
+	.text {
+		line-height: $cardtext-lh;
+		margin-bottom: $cardtext-margin;
+	}
+	.links {
+		font-size: $cardlinks;
+		a+a {
+			margin-left: 10px;
+		}
+	}
+}
+.card+.card {
+	margin-left: 0;
+}
+// Card Grid
+.card-grid {
+	display: grid;
+	// Allows the columns to repeat automatically and fit themselves into the free space. A min-max is set so that it doesn't look too small or get too cramped.
+	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+	.card {
+		// The same as the masthead
+		background: darken($white, 5%);
+		margin: $cardmargin;
+		padding: $cardpadding;
+		border-radius: $cardborderradius;
+		border: $cardborder;
+		h3 {
+			font-size: $cardh3;
+		}
+		h4 {
+			font-size: $cardh4;
+			font-weight: 400;
+		}
+		.border {
+			margin-bottom: $cardborder-margin;
+			border-bottom: $cardborder-border;
+		}
+		.text {
+			line-height: $cardtext-lh;
+			margin-bottom: $cardtext-margin;
+		}
+		.links {
+			font-size: $cardlinks;
+			a+a {
+				margin-left: 10px;
+			}
+		}
+		// TODO: Add button styling
+	}
+}
+// Article blocks
+article {
+	font-family: $articlefont;
+	line-height: $article-lh;
+	font-weight: 400;
+	font-size: $article-fontsize;
+	h1 {
+		font-weight: 400;
+		font-family: $article-h1;
+	}
+}
+// Used with the background image plugin
+.coverPage {
+	height: $mast-fillSize;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	border-radius: 0;
+	background: $white;
+}
+// Used to make a masthead fill the screen
+.fillPage {
+	height: $mast-fillSize;
+	margin: 0;
+	// Set as flex so that everything is vertical aligned to the center. Must use the content class for this to work.
+	display: flex;
+	border-radius: 0;
+	align-items: center;
+	.content {
+		width: 75%;
+		margin: auto;
+		justify-content: center;
+		text-align: center;
+	}
+}
+// 404
+.error-404 {
+	display: $e404-display;
+	padding: $e404-padding;
+	h1 {
+		font-size: $e404-h1-fontsize;
+		font-weight: 400;
+	}
+	p {
+		font-size: $e404-p-fontsize;
+	}
+}
+// Footer
+.footer {
+	border-top: $footer-border-top;
+	border-bottom: $footer-border-bottom;
+	margin: $footer-margin;
+	display: $footer-display;
+	padding: $footer-padding;
+	text-decoration: none;
+}
+.footer.dark {
+	background: $footerdark-background;
+	border-top: $footerdark-border-top;
+	border-bottom: $footerdark-border-bottom;
+	color: $footerdark-color;
+	margin: $footerdark-margin;
+}
+.footer.dark a {
+	color: $footerdark-link;
+}
+.footer.stickyFooter {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+// Wells
+.well {
+	background: $well-background;
+	padding: $well-padding;
+	width: $well-width;
+	display: $well-display;
+	border: $well-border;
+}
+.well-middle {
+	border-left: none;
+	border-right: none;
+}
+
+// Notices
+.notice {
+	display: $notice-display;
+	padding: $notice-padding;
+	.header {
+		display: $notice-header-display;
+		font-weight: 400;
+		font-size: $notice-header-font;
+		border-bottom: $notice-header-border-bottom;
+		padding-bottom: $notice-header-padding-bottom;
+	}
+	p {
+		margin-top: $notice-p-margin-top;
+		font-size: $notice-p-font;
+	}
+}
+.notice-primary {
+	background: $primary-blue;
+	color: $notice-primary-color;
+	border-left: $notice-primary-border;
+}
+.notice-green {
+	background: $primary-green;
+	color: $notice-variant-color;
+	border-left: $notice-green-border;
+	.header {
+		border-bottom-color: $notice-variant-header;
+	}
+}
+.notice-red {
+	color: $notice-variant-color;
+	background: $primary-red;
+	border-left: $notice-red-border;
+	.header {
+		border-bottom-color: $notice-variant-header;
+	}
+}
+.notice-lightBlue {
+	background: $primary-lightblue;
+	color: $notice-variant-color;
+	border-left: $notice-lightblue-border;
+	.header {
+		border-bottom-color: $notice-variant-header;
+	}
+}
+.notice-orange {
+	background: $primary-orange;
+	color: $notice-variant-color;
+	border-left: $notice-orange-border;
+	.header {
+		border-bottom-color: $notice-variant-header;
+	}
+}
+
+// Blockquotes
+blockquote {
+	border-left: $blockquote-border;
+}

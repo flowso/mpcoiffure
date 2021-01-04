@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html itemscope=" " itemtype="http://schema.org/WebPage" lang="en">
+<head>
+	<meta content="Nox is a beautiful, easy to use and lightweight front-end framework built for the modern web." name="description">
+
+	<title>Changelog - Nox Framework</title>
+
+	<!--Styles-->
+	<link rel="stylesheet" href="../css/nox.min.css">
+	<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+	<nav class="nav nav-dark">
+		<div class="branding"><a href="https://get-nox.com">Nox</a></div>
+		<a class="res-only" href="#"></a>
+		<ul class="nav-group res-menu">
+			<li><a href="https://get-nox.com/docs/">Docs</a></li>
+			<li><a href="">CSS</a></li>
+		</ul>
+	</nav>
+
+    <div class="changeGrid">
+        <h1>Changelog</h1>
+		<a href="#" class="button button-primary modalOpen" style="width: 150px;">Release types</a>
+		<div class="row">
+			<section class="version">
+				<h2>A1.0.1.1</h2>
+			</section>
+			<section>
+				<h2>Changes</h2>
+				<ul>
+					<li>Added cards</li>
+					<li>Clarified things in the Readme</li>
+					<li>Moved <code>_flexgrid.scss</code> to the vendor folder</li>
+				</ul>
+			</section>
+		</div>
+		<div class="row">
+			<section class="version">
+				<h2>R1.0.1</h2>
+			</section>
+			<section>
+				<h2>Changes:</h2>
+				<ul>
+					<li>Overhauled the navigation to Flexbox</li>
+					<li>Removed pull-right and pull-left, replaced the pull-right functionality with a simple right class</li>
+					<li>Dropdowns are in progress, the basic functionality is there, however only one dropdown can be functional at one time, and it is not supported inside of the responsive navigation</li>
+					<li>The old nav is still available as fallbacknav.css and nav_fallback.js as some users do not like/want to use flexbox</li>
+				</ul>
+			</section>
+		</div>
+		<div class="row">
+			<section class="version">
+				<h2>R1.0.0</h2>
+			</section>
+			<section>
+				<h2>Changes:</h2>
+				<ul>
+					<li>Adjusted the Line Height for paragraphs</li>
+					<li>Added article styling</li>
+					<li>Changed font-weight to be heavier</li>
+					<li>Changed how the responsive nav worked a bit</li>
+					<li>Fixed the issue with the responsive nav staying open on window resize</li>
+					<li>Updated to jQuery 3.2.1</li>
+					<li>Added a cleaner layout to the changelog, along with sidebar functionalities</li>
+					<li>For simplicity, changed the jQuery file name to just plain jquery.min.js</li>
+					<li>Added an inverse Masthead (dark masthead)</li>
+					<li>Fixed a weird issue with a white bottom margin on the navigation for darker sites</li>
+					<li>Removed the branding height, it's less janky now</li>
+					<li>Changed how images are rendered so they're not so pixelated, added responsive elements to images in general</li>
+					<li>Removed all usage of external fonts, they're not needed and they bloat the system up</li>
+					<li>Removed the grid system. It belongs to Bootstrap, and I don't need to include one or make my own. There is no need to reinvent the wheel here</li>
+				</ul>
+			</section>
+		</div>
+		<div class="row">
+			<section class="version">
+				<h2>R0.0.3</h2>
+			</section>
+			<section>
+				<h2>Changes:</h2>
+				<ul>
+					<li>Added notices (primary, green, red, lightBlue &amp; orange variants)</li>
+					<li>Added scrollTop</li>
+					<li>Added a topOnly margin</li>
+					<li>Added support for a fixed navigation</li>
+					<li>Created a hamburger icon purely in CSS</li>
+				</ul>
+			</section>
+		</div>
+		<div class="row">
+			<section class="version">
+				<h2>A0.0.2.1</h2>
+			</section>
+			<section>
+				<h2>Changes:</h2>
+				<ul>
+					<li>Changed font weight in body to 400</li>
+					<li>Changed font weight in header to 700</li>
+					<li>Changed paragraph line height to 2em</li>
+					<li>Masthead h1 set to 300 weight</li>
+					<li>Masthead paragraph set to normal</li>
+				</ul>
+			</section>
+		</div>
+        <div class="row">
+            <section class="version">
+                <h2>R0.0.2</h2>
+            </section>
+            <section>
+                <h2>Changes:</h2>
+                <ul>
+                    <li>Cleaned up files</li>
+                    <li>Added auto-meta (optional)</li>
+                    <li>Created the Markup modal</li>
+                    <li>Added homepage theme</li>
+                    <li>Added <code>.coverpage</code></li>
+                    <li>Added more docs</li>
+                    <li>Added JS to fetch image and set that image as the background for a coverpage masthead</li>
+                    <li>Fixed section font sizes being changed up</li>
+                    <li>Fixed tab size, set it to 4</li>
+                    <li>More commenting on source files</li>
+                    <li>Created nox.min.css for a normal feel</li>
+                    <li>Added button variants</li>
+                    <li>Created more mixins</li>
+                    <li>Fixed modal &amp; nav scrolling to the top and being annoying</li>
+                    <li>Created a combo file (nox.js &amp; nox.min.js) to combine the LoadBG, Nav &amp; Ajax Modal info one file</li>
+                </ul>
+            </section>
+        </div>
+        <div class="row">
+            <section class="version">
+                <h2>R0.0.1</h2>
+            </section>
+            <section>
+                <h2>Changes:</h2>
+                <ul>
+                    <li>After 2 years, the first release</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+	<div class="modal">
+		<section class="header">Release Types</section>
+		<section class="content">
+			<p><b>Full</b> releases are prefixed by an R, they are packaged into Zip files on the website for your viewing pleasure.<br>
+				<b>Development</b> releases are prefixed by an A, and include small incremental updates to the code that don't merit a full release.</p>
+		</section>
+	</div>
+
+    <footer class="footer dark">
+	    &copy; 2015-2017 Nox Framework. Created with gum and duct tape by <a href="https://zruybal.com">Zack Ruybal</a>.
+		<div class="pull-right">
+			<a href="https://get-nox.com/changelog">Changelog</a>
+		</div>
+	</footer>
+
+    <!--Scripts-->
+	<script src="../js/vendor/jquery.min.js"></script>
+	<script src="../js/navigation.min.js"></script>
+	<script src="../js/auto-meta.min.js"></script>
+	<script src="../js/modal.js"></script>
+	<script>
+		$('.modal').mrkmodal();
+	</script>
+</body>
+</html>

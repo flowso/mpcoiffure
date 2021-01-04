@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html itemscope=" " itemtype="http://schema.org/WebPage" lang="en">
+<head>
+
+	<title>Testing Grounds - Nox</title>
+
+	<!--Styles-->
+	<link rel="stylesheet" href="css/nox.min.css">
+</head>
+<body class="fixed-body">
+	<div class="nav nav-dark fixed-top">
+		<div class="branding"><a href="">Nox</a></div>
+		<a class="res-only" href="#"></a>
+		<div class="nav-group">
+			<ul>
+				<li><a href="">Getting Started</a></li>
+				<li><a href="">Components</a></li>
+				<li><a href="">CSS</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="box-margin">
+		<h2 class="section-heading">Forms</h2>
+		<pre>
+&lt;form&gt;
+	&lt;div class="form box-margin formOutline"&gt;
+		&lt;label for="name"&gt;Your Name&lt;/label&gt;
+		&lt;input id="name" type="text" placeholder="Test"&gt;
+		&lt;label for="email"&gt;Email Address&lt;/label&gt;
+		&lt;input id="email" type="email" placeholder="you@domain.com"&gt;
+		&lt;div class="checkbox"&gt;
+			&lt;label&gt;
+				&lt;input type="checkbox"&gt;
+				Test
+			&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;button type="submit" class="button button-primary"&gt;Submit&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+		</pre>
+		<form>
+			<div class="form formOutline">
+				<label for="name">Your Name</label>
+				<input id="name" type="text" placeholder="Test">
+				<label for="email">Email Address</label>
+				<input id="email" type="email" placeholder="you@domain.com">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox">
+						Test
+					</label>
+				</div>
+				<button type="submit" class="button button-primary">Submit</button>
+			</div>
+		</form>
+
+		<h2 class="section-heading">Markup Modals</h2>
+		<a href="#" class="button button-primary modalOpen">Markup Modal</a>
+
+		<code>&lt;p&gt;this is a test&lt;/p&gt;</code>
+	    <div class="modal">
+	        <section class="header">Test Modal</section>
+	        <section class="content">
+	            <p>I'm some content in this modal! How about that :)</p>
+	        </section>
+	    </div>
+		<pre>
+&lt;a href="#" class="button button-primary modalOpen"&gt;Markup Modal&lt;/a&gt;
+
+&lt;div class="modal"&gt;
+    &lt;section class="header"&gt;Test Modal&lt;/section&gt;
+    &lt;section class="content"&gt;
+        &lt;p&gt;I'm some content in this modal! How about that :)&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+		</pre>
+		<div class="styleBlock primary"></div>
+		<div class="styleBlock green"></div>
+		<div class="styleBlock red"></div>
+		<div class="styleBlock lightblue"></div>
+		<div class="styleBlock orange"></div>
+		<div class="styleBlock darkblue"></div>
+
+		<br>
+		<a href="" class="button button-red">Test</a>
+		<a href="" class="button button-lightBlue">Test</a>
+		<a href="" class="button button-orange">Test</a>
+	</div>
+
+	<div class="box-margin">
+		<div class="notice notice-orange">
+			<section class="header">Hi there, I'm a notice.</section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magnam quod cumque ipsum fugit, quae enim omnis labore ratione neque dolores consequuntur suscipit maiores obcaecati, dolor vel? Earum, dicta commodi.</p>
+		</div>
+	</div>
+	<div class="card-grid">
+		<div class="card">
+			<h3>Card Title</h3>
+			<h4 class="border">Card Subtitle</h4>
+			<p class="text">This is some test text to see what the cards look like when they're on a page.</p>
+			<div class="links">
+				<a href="#">Card Link</a>
+				<a href="#">Card Link 2</a>
+			</div>
+		</div>
+		<div class="card">
+			<h3>Card Title</h3>
+			<h4 class="border">Card Subtitle</h4>
+			<p class="text">This is some test text to see what the cards look like when they're on a page.</p>
+			<div class="links">
+				<a href="#">Card Link</a>
+				<a href="#">Card Link 2</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/nox.min.js"></script>
+	<script src="js/modal.js"></script>
+	<script>
+		$('.modal').mrkmodal();
+	</script>
+</body>
+</html>
